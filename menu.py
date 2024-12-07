@@ -72,7 +72,7 @@ class Menu:
     print("-------------------------")
 
   def get_item(self, name: str) -> "MenuItem":
-    for item in self.menu_items:
+    for item in self.items:
       if name == item.name:
         return item 
 
