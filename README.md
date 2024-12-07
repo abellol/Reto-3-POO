@@ -74,6 +74,51 @@ class Rectangle:
 
 #### 2. Restaurant scenario
 
+
+```mermaid
+classDiagram
+    class MenuItem{
+      +str name
+      +float price
+    }
+    class Beverage{
+      +str size
+    
+    }
+    class Appetizer{
+      +bool is_vegetarian
+    }
+    class MainCourse{
+      +str protein
+      +bool is_vegetarian
+    }
+    class Dessert{
+      +str topping
+    }
+    
+    class Order{
+      +list items
+      +add_items()
+      +calculate_total()
+    }
+
+    class Menu{
+      +list menu_items
+      +show_menu()
+      +get_item()
+    }
+
+    
+    MenuItem <|-- Beverage
+    MenuItem <|-- MainCourse
+    MenuItem <|-- Appetizer
+    MenuItem <|-- Dessert
+
+
+    Menu *-- MenuItem
+    Order*-- MenuItem
+```
+
 ```python
 class MenuItem:
   def __init__(self, name: str, price: float):
