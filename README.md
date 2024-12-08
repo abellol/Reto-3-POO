@@ -130,13 +130,13 @@ class MenuItem:
     price (float): Price of the item from menu
   """
   def __init__(self, name: str, price: float):
-  """
-  Initializes the class with values for attribute1 and attribute2.
+    """
+  Initializes the class with values for name and price.
 
   Args:
     name (str): The initial value for name.
     price (int): The initial value for price.
-  """
+    """
     self.name = name
     self.price = price
  
