@@ -71,6 +71,72 @@ class Rectangle:
   def compute_perimeter(self):
     return(f"Perimeter: {self.width1.compute_length() + self.height1.compute_length() + self.width2.compute_length() + self.height2.compute_length()}")
 ```
+And the usage example:
+
+```python
+if __name__ == "__main__":
+
+  # First Line
+  start1 = Point(0,0)
+  end1 = Point(0,5)
+
+  line1 = Line(start1, end1)
+  print(line1.compute_length())
+  print(line1.compute_slope())
+  print(line1.compute_horizontal_cross())
+  print(line1.compute_vertical_cross())
+
+  print("-----------------------------------")
+
+  # Second line
+  start2 = Point(0,0)
+  end2 = Point(4,0)
+
+  line2 = Line(start2, end2)
+  print(line2.compute_length())
+  print(line2.compute_slope())  
+  print(line2.compute_horizontal_cross())
+  print(line2.compute_vertical_cross())
+  
+
+  print("-----------------------------------")
+
+  # Third line
+  start3 = Point(4,0)
+  end3 = Point(4,5)
+
+  line3 = Line(start3, end3)
+  print(line3.compute_length())
+  print(line3.compute_slope())  
+  print(line3.compute_horizontal_cross())
+  print(line3.compute_vertical_cross())
+
+  print("-----------------------------------")
+  
+  # fourth line
+  start4 = Point(0,5)
+  end4 = Point(4,5)
+
+  line4 = Line(start4, end4)
+  print(line4.compute_length())
+  print(line4.compute_slope())
+  print(line4.compute_horizontal_cross())
+  print(line4.compute_vertical_cross())
+
+  print("-----------------------------------")
+
+  # rectangle
+  rectangle1 = Rectangle(line1, line2, line3, line4)
+  print(rectangle1.compute_area())
+  print(rectangle1.compute_perimeter())
+
+
+  # exmaple line dicretize
+  start5 = Point(1,2)
+  end5 = Point(5,4)
+  line5 = Line(start5, end5)
+  print(line5.dicretize_line(5))
+```
 
 #### 2. Restaurant scenario
 
