@@ -288,7 +288,7 @@ class Menu:
         return item 
 
 if __name__ == "__main__":
-
+  # Example menu
   menu = Menu()
   menu.show_menu()
   order = Order()
